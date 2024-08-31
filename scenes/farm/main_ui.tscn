@@ -1,0 +1,110 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1gvrys153ktd"]
+
+[ext_resource type="Texture2D" uid="uid://b81el12aqfowg" path="res://icon.svg" id="1_kdnvy"]
+[ext_resource type="Theme" uid="uid://deybxgjwjig16" path="res://themes/btn_gray_m.tres" id="2_qcep4"]
+[ext_resource type="Theme" uid="uid://2woc2v11ise4" path="res://themes/font_normal.tres" id="3_h57fs"]
+[ext_resource type="Theme" uid="uid://b3q04sduprnw6" path="res://themes/resource_bar.tres" id="4_k85hg"]
+
+[node name="MainUi" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Username" type="Button" parent="."]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 80.0
+offset_right = 384.0
+offset_bottom = 120.0
+text = "Jirawat Charoonnet"
+
+[node name="Avartar" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 192.0
+offset_bottom = 192.0
+texture = ExtResource("1_kdnvy")
+
+[node name="Announcement" type="Button" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 960.0
+offset_right = 194.0
+offset_bottom = 1024.0
+theme = ExtResource("2_qcep4")
+text = "ประกาศ"
+
+[node name="Friends" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1272.0
+offset_top = 960.0
+offset_right = 1402.0
+offset_bottom = 1024.0
+theme = ExtResource("2_qcep4")
+text = "เพื่อน"
+
+[node name="Arena" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1424.0
+offset_top = 960.0
+offset_right = 1554.0
+offset_bottom = 1024.0
+theme = ExtResource("2_qcep4")
+text = "สนามรบ"
+
+[node name="Inventory" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1574.0
+offset_top = 960.0
+offset_right = 1704.0
+offset_bottom = 1024.0
+theme = ExtResource("2_qcep4")
+text = "คลังแสง"
+
+[node name="MyMonsters" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1727.0
+offset_top = 960.0
+offset_right = 1857.0
+offset_bottom = 1024.0
+theme = ExtResource("2_qcep4")
+text = "ลูกสมุน"
+
+[node name="CoinLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1483.0
+offset_top = 64.0
+offset_right = 1632.0
+offset_bottom = 112.0
+theme = ExtResource("3_h57fs")
+text = "เงินของคุณ"
+
+[node name="Coin" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1656.0
+offset_top = 64.0
+offset_right = 1856.0
+offset_bottom = 112.0
+theme = ExtResource("4_k85hg")
+
+[node name="DimondLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1465.0
+offset_top = 128.0
+offset_right = 1632.0
+offset_bottom = 176.0
+theme = ExtResource("3_h57fs")
+text = "เพรชของคุณ"
+
+[node name="Dimond" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1656.0
+offset_top = 128.0
+offset_right = 1856.0
+offset_bottom = 176.0
+theme = ExtResource("4_k85hg")

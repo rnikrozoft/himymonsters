@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://b114kjofp466d"]
+
+[ext_resource type="Script" path="res://scenes/farm/farm.gd" id="1_duh55"]
+[ext_resource type="Texture2D" uid="uid://kaxqmnnaglcy" path="res://assets/arts/backgrounds/farm/autumn/5.png" id="1_yaeh4"]
+[ext_resource type="Texture2D" uid="uid://s8anudt13ux7" path="res://assets/arts/backgrounds/farm/autumn/4.png" id="2_tkafh"]
+[ext_resource type="Texture2D" uid="uid://dixf0o206bvi8" path="res://assets/arts/backgrounds/farm/autumn/3.png" id="3_bnhs0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oi45s"]
+size = Vector2(1920, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n8y7b"]
+size = Vector2(20, 620)
+
+[node name="Farm" type="Node2D"]
+script = ExtResource("1_duh55")
+
+[node name="SkyAndMounthens" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 230.0
+texture = ExtResource("1_yaeh4")
+expand_mode = 1
+
+[node name="Ground" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 130.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_tkafh")
+expand_mode = 1
+
+[node name="Trees" type="TextureRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 370.0
+texture = ExtResource("3_bnhs0")
+expand_mode = 1
+
+[node name="Walls" type="RigidBody2D" parent="."]
+gravity_scale = 0.0
+
+[node name="Top" type="CollisionShape2D" parent="Walls"]
+position = Vector2(960, 394)
+shape = SubResource("RectangleShape2D_oi45s")
+
+[node name="Bottom" type="CollisionShape2D" parent="Walls"]
+position = Vector2(960, 1034)
+shape = SubResource("RectangleShape2D_oi45s")
+
+[node name="Left" type="CollisionShape2D" parent="Walls"]
+position = Vector2(10, 714)
+shape = SubResource("RectangleShape2D_n8y7b")
+
+[node name="Right" type="CollisionShape2D" parent="Walls"]
+position = Vector2(1910, 714)
+shape = SubResource("RectangleShape2D_n8y7b")

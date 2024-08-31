@@ -1,0 +1,36 @@
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://b3q04sduprnw6"]
+
+[ext_resource type="FontFile" uid="uid://ohf26q7imoth" path="res://assets/fonts/Mitr/Mitr-SemiBold.ttf" id="1_3mdmk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2yxoe"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qnnlu"]
+bg_color = Color(0, 0, 0, 0.521569)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vmjyy"]
+bg_color = Color(0, 0, 0, 0.521569)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8kp5s"]
+bg_color = Color(0, 0, 0, 0.521569)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[resource]
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 10
+Button/font_sizes/font_size = 30
+Button/fonts/font = ExtResource("1_3mdmk")
+Button/styles/focus = SubResource("StyleBoxEmpty_2yxoe")
+Button/styles/hover = SubResource("StyleBoxFlat_qnnlu")
+Button/styles/normal = SubResource("StyleBoxFlat_vmjyy")
+Button/styles/pressed = SubResource("StyleBoxFlat_8kp5s")

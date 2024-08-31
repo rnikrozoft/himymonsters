@@ -1,0 +1,25 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://deybxgjwjig16"]
+
+[ext_resource type="FontFile" uid="uid://ohf26q7imoth" path="res://assets/fonts/Mitr/Mitr-SemiBold.ttf" id="1_t8q6r"]
+[ext_resource type="Texture2D" uid="uid://c32mfhnccm4py" path="res://assets/arts/buttons/CasualGameButtonsVol03/CGB03-grey_M_btn.png" id="2_idag6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a0f4a"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wg2dw"]
+texture = ExtResource("2_idag6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vw28s"]
+texture = ExtResource("2_idag6")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l33wh"]
+texture = ExtResource("2_idag6")
+
+[resource]
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 10
+Button/font_sizes/font_size = 30
+Button/fonts/font = ExtResource("1_t8q6r")
+Button/styles/focus = SubResource("StyleBoxEmpty_a0f4a")
+Button/styles/hover = SubResource("StyleBoxTexture_wg2dw")
+Button/styles/normal = SubResource("StyleBoxTexture_vw28s")
+Button/styles/pressed = SubResource("StyleBoxTexture_l33wh")

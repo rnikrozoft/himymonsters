@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://b114kjofp466d"]
 
 [ext_resource type="Script" path="res://scenes/farm/farm.gd" id="1_duh55"]
-[ext_resource type="Texture2D" uid="uid://kaxqmnnaglcy" path="res://assets/arts/backgrounds/farm/autumn/5.png" id="1_yaeh4"]
-[ext_resource type="Texture2D" uid="uid://s8anudt13ux7" path="res://assets/arts/backgrounds/farm/autumn/4.png" id="2_tkafh"]
-[ext_resource type="Texture2D" uid="uid://dixf0o206bvi8" path="res://assets/arts/backgrounds/farm/autumn/3.png" id="3_bnhs0"]
+[ext_resource type="Texture2D" uid="uid://kaxqmnnaglcy" path="res://himymonsters-assets/arts/backgrounds/farm/autumn/5.png" id="1_yaeh4"]
+[ext_resource type="Texture2D" uid="uid://s8anudt13ux7" path="res://himymonsters-assets/arts/backgrounds/farm/autumn/4.png" id="2_tkafh"]
+[ext_resource type="Texture2D" uid="uid://dixf0o206bvi8" path="res://himymonsters-assets/arts/backgrounds/farm/autumn/3.png" id="3_bnhs0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oi45s"]
 size = Vector2(1920, 20)

@@ -1,0 +1,73 @@
+[gd_scene load_steps=6 format=3 uid="uid://deu1y54ke07q7"]
+
+[ext_resource type="Script" path="res://scenes/ui/steal_or_kill_popup.gd" id="1_bjskp"]
+[ext_resource type="Theme" uid="uid://cxg0jqkknij6h" path="res://themes/btn_green_s.tres" id="1_i3wlf"]
+[ext_resource type="Texture2D" uid="uid://cewxbi15xftrr" path="res://himymonsters-assets/arts/icons/icons/gem_2.png" id="2_b7g73"]
+[ext_resource type="Theme" uid="uid://mh63emy3k32r" path="res://themes/btn_red_s.tres" id="3_n7oxb"]
+[ext_resource type="Texture2D" uid="uid://uhlyu8domi32" path="res://himymonsters-assets/arts/icons/icons/gem_4.png" id="4_voudw"]
+
+[node name="StealOrKillPopup" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_bjskp")
+
+[node name="BackGroundShadow" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.317647)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BackGroundShadow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -297.0
+offset_top = -125.0
+offset_right = 297.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginLeftButton" type="MarginContainer" parent="BackGroundShadow/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_right = 25
+
+[node name="Steal" type="Button" parent="BackGroundShadow/HBoxContainer/MarginLeftButton"]
+custom_minimum_size = Vector2(270, 250)
+layout_mode = 2
+theme = ExtResource("1_i3wlf")
+text = "ขโมย"
+icon = ExtResource("2_b7g73")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="MarginRightButton" type="MarginContainer" parent="BackGroundShadow/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+
+[node name="Kill" type="Button" parent="BackGroundShadow/HBoxContainer/MarginRightButton"]
+custom_minimum_size = Vector2(270, 250)
+layout_mode = 2
+theme = ExtResource("3_n7oxb")
+text = "ฆ่า"
+icon = ExtResource("4_voudw")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
+[connection signal="gui_input" from="BackGroundShadow" to="." method="_on_back_ground_shadow_gui_input"]
+[connection signal="pressed" from="BackGroundShadow/HBoxContainer/MarginLeftButton/Steal" to="." method="_on_steal_pressed"]
+[connection signal="pressed" from="BackGroundShadow/HBoxContainer/MarginRightButton/Kill" to="." method="_on_kill_pressed"]

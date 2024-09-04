@@ -1,0 +1,209 @@
+[gd_scene load_steps=46 format=3 uid="uid://d0dwwpclua7ue"]
+
+[ext_resource type="Script" path="res://scenes/monsters/monster.gd" id="1_cqgta"]
+[ext_resource type="Texture2D" uid="uid://cnichwpbmoyu7" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_000.png" id="1_ydmpk"]
+[ext_resource type="Texture2D" uid="uid://m264y6bv5a3v" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_001.png" id="2_frt41"]
+[ext_resource type="Texture2D" uid="uid://0gwsv0lxg6wb" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_002.png" id="3_brj87"]
+[ext_resource type="Texture2D" uid="uid://c783a3sgnq6jf" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_003.png" id="4_st0s0"]
+[ext_resource type="Texture2D" uid="uid://dttqxcnvrocnl" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_004.png" id="5_1fah8"]
+[ext_resource type="Texture2D" uid="uid://be76v3c6m126e" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_005.png" id="6_icsd0"]
+[ext_resource type="Texture2D" uid="uid://dgv311qdwl4vp" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_006.png" id="7_k1i8s"]
+[ext_resource type="Texture2D" uid="uid://uv1duxckr6bu" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_007.png" id="8_yxsw6"]
+[ext_resource type="Texture2D" uid="uid://bt4vwhd5acfur" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_008.png" id="9_8a7dl"]
+[ext_resource type="Texture2D" uid="uid://bk104nlsx4gtg" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_009.png" id="10_5fxab"]
+[ext_resource type="Texture2D" uid="uid://bx8djhyiluktk" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_010.png" id="11_cmnfm"]
+[ext_resource type="Texture2D" uid="uid://diog3o01ivbmc" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_011.png" id="12_00dvn"]
+[ext_resource type="Texture2D" uid="uid://cxf14x4gboyy5" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_012.png" id="13_7yt8l"]
+[ext_resource type="Texture2D" uid="uid://bqtrmbmhc6lis" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_013.png" id="14_7a1b7"]
+[ext_resource type="Texture2D" uid="uid://cocx6y3g8u0ix" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_014.png" id="15_ep640"]
+[ext_resource type="Texture2D" uid="uid://cfihng78b87yw" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_015.png" id="16_ahqfe"]
+[ext_resource type="Texture2D" uid="uid://c4dyumapahvfy" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_016.png" id="17_fix28"]
+[ext_resource type="Texture2D" uid="uid://dfqxpc3o02yee" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Idle Blinking/0_Reaper_Man_Idle Blinking_017.png" id="18_gaxoi"]
+[ext_resource type="Texture2D" uid="uid://bhawauh7amw22" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_000.png" id="19_kv5yi"]
+[ext_resource type="Texture2D" uid="uid://on3e8amxw3do" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_001.png" id="20_oqjvd"]
+[ext_resource type="Texture2D" uid="uid://cjry3isnhnabl" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_002.png" id="21_vwau3"]
+[ext_resource type="Texture2D" uid="uid://cl62sa2hqb7uw" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_003.png" id="22_47aka"]
+[ext_resource type="Texture2D" uid="uid://d1xx1vebb0o78" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_004.png" id="23_vldty"]
+[ext_resource type="Texture2D" uid="uid://1bepldhwi5ou" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_005.png" id="24_4g717"]
+[ext_resource type="Texture2D" uid="uid://caax0qs2o5u4" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_006.png" id="25_bnkdr"]
+[ext_resource type="Texture2D" uid="uid://cjfnj88r4da06" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_007.png" id="26_7dpiv"]
+[ext_resource type="Texture2D" uid="uid://byeacgimta5nm" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_008.png" id="27_trpkm"]
+[ext_resource type="Texture2D" uid="uid://cbjge8wm2j5q6" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_009.png" id="28_01ibe"]
+[ext_resource type="Texture2D" uid="uid://byjad2acfwae" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_010.png" id="29_0lbn8"]
+[ext_resource type="Texture2D" uid="uid://c1e0gujht1t7v" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_011.png" id="30_3u2s8"]
+[ext_resource type="Texture2D" uid="uid://bfhymqqaqjmsn" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_012.png" id="31_oabph"]
+[ext_resource type="Texture2D" uid="uid://ditlj64jtpmhr" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_013.png" id="32_3si16"]
+[ext_resource type="Texture2D" uid="uid://dygv30od42kwb" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_014.png" id="33_81gd8"]
+[ext_resource type="Texture2D" uid="uid://gvvir88j3hav" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_015.png" id="34_8vth0"]
+[ext_resource type="Texture2D" uid="uid://dk0h0rxrrj3vs" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_016.png" id="35_phxua"]
+[ext_resource type="Texture2D" uid="uid://06jyhrp8bftm" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_017.png" id="36_r7y2r"]
+[ext_resource type="Texture2D" uid="uid://cfslik2iscodf" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_018.png" id="37_n7q2p"]
+[ext_resource type="Texture2D" uid="uid://dhqoxyh48kofj" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_019.png" id="38_c42ri"]
+[ext_resource type="Texture2D" uid="uid://qop23kpvxqsx" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_020.png" id="39_e2vx0"]
+[ext_resource type="Texture2D" uid="uid://73gpr6l10fbi" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_021.png" id="40_y7x2b"]
+[ext_resource type="Texture2D" uid="uid://dflximow5no0x" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_022.png" id="41_mewa2"]
+[ext_resource type="Texture2D" uid="uid://c2o5mv5cq2b16" path="res://himymonsters-assets/arts/monsters/Reaper_Man_1/Walking/0_Reaper_Man_Walking_023.png" id="42_l02om"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hrfov"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ydmpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_frt41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_brj87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_st0s0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_1fah8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_icsd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_k1i8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_yxsw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8a7dl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5fxab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_cmnfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_00dvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_7yt8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_7a1b7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_ep640")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ahqfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_fix28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_gaxoi")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_kv5yi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_oqjvd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_vwau3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_47aka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_vldty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_4g717")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_bnkdr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_7dpiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_trpkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_01ibe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_0lbn8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_3u2s8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_oabph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_3si16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_81gd8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_8vth0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_phxua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_r7y2r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_n7q2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_c42ri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_e2vx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_y7x2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_mewa2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_l02om")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_al0or"]
+size = Vector2(64, 55)
+
+[node name="Reaperman1" type="RigidBody2D"]
+gravity_scale = 0.0
+lock_rotation = true
+freeze = true
+script = ExtResource("1_cqgta")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_hrfov")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 63.5)
+shape = SubResource("RectangleShape2D_al0or")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(-50, -64, -61, -51, -66, -6, -63, 14, -51, 27, -35, 36, -29, 39, -37, 77, -30, 85, -10, 91, 14, 91, 32, 81, 27, 60, 24, 43, 47, 31, 61, 11, 65, -17, 58, -46, 36, -71, 1, -82, -30, -74)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_monster_clicked"]

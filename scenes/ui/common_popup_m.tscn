@@ -1,0 +1,62 @@
+[gd_scene load_steps=4 format=3 uid="uid://de62k0qo0n4dv"]
+
+[ext_resource type="Texture2D" uid="uid://buipjokkn2f1t" path="res://himymonsters-assets/arts/backgrounds/2567-08-17_23-32-57.png" id="1_krx3e"]
+[ext_resource type="FontFile" uid="uid://cp4s0b8m6pl2d" path="res://himymonsters-assets/fonts/Mitr/Mitr-Bold.ttf" id="2_0pud7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l004e"]
+bg_color = Color(0.92549, 0.886275, 0.776471, 1)
+
+[node name="CommonPopupM" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="BackgroundShadow" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Card" type="Panel" parent="BackgroundShadow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -260.0
+offset_right = 960.0
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_l004e")
+
+[node name="Header" type="TextureRect" parent="BackgroundShadow/Card"]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 80.0
+texture = ExtResource("1_krx3e")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Label" type="Label" parent="BackgroundShadow/Card"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -78.5
+offset_right = 20.0
+offset_bottom = 78.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_0pud7")
+theme_override_font_sizes/font_size = 100

@@ -12,7 +12,7 @@ var is_stopped = false
 var farm
 
 @onready var character = $AnimatedSprite2D
-#var alert = Alert.new()
+var alert = Alert.new()
 
 func _ready():
 	#$Label.text = monster_id
@@ -23,8 +23,8 @@ func _ready():
 func _on_monster_clicked(viewport, event, shape_idx):
 	if Global.is_left_click(event):
 		stop_movement()
-		#if !Global.is_my_farm:
-			#alert.steal_or_kill(self)
+		if !Global.is_my_farm:
+			alert.steal_or_kill(self)
 
 func _process(delta):
 	if is_stopped:

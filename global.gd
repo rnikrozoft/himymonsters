@@ -7,20 +7,32 @@ var session
 var match_id
 var owner_id
 var is_my_farm
+var previous_scene
 
 var MONSTER_TYPES = {
+	"fallen_1": load("res://scenes/monsters/fallen_1.tscn"),
+	
+	"golem_3": load("res://scenes/monsters/golem_3.tscn"),
+	
+	"minotaur_3": load("res://scenes/monsters/minotaur_3.tscn"),
+	
+	"reaperman_1": load("res://scenes/monsters/reaperman_1.tscn"),
+	"reaperman_2": load("res://scenes/monsters/reaperman_2.tscn"),
 	"reaperman_3": load("res://scenes/monsters/reaperman_3.tscn")
 }
 
 func is_left_click(event: InputEvent) -> bool:
 	return event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed
 
-func get_monsters(user_id: String) -> Array:
+var player_data = {
+	"my_monsters":null
+}
+func get_monsters(user_id: String):
 	var monsters = await client.rpc_async(session, "get_monsters",JSON.stringify({
 		"owner_id": user_id
 	}))
 	var data = parse_json(monsters.payload)
-	return data.monsters
+	player_data.my_monsters = data.monsters
 	
 func parse_json(json_string: String) -> Dictionary:
 	var json = JSON.new()

@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=6 format=3 uid="uid://b3q04sduprnw6"]
 
-[ext_resource type="FontFile" uid="uid://ohf26q7imoth" path="res://assets/fonts/Mitr/Mitr-SemiBold.ttf" id="1_3mdmk"]
+[ext_resource type="FontFile" uid="uid://ohf26q7imoth" path="res://himymonsters-assets/fonts/Mitr/Mitr-SemiBold.ttf" id="1_3mdmk"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2yxoe"]
 

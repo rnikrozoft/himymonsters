@@ -1,0 +1,720 @@
+[gd_scene load_steps=10 format=3 uid="uid://bltfjg6nxt757"]
+
+[ext_resource type="Texture2D" uid="uid://dvebxmqibgs3m" path="res://assets/arts/backgrounds/vecteezy_cartoon-alien-planet-landscape-with-neon-crystals_24592684.jpg" id="1_3syk2"]
+[ext_resource type="Script" path="res://scenes/shop/common_shop.gd" id="1_qxq4a"]
+[ext_resource type="Texture2D" uid="uid://cq7qk7khykkt1" path="res://assets/arts/buttons/CasualGameButtonsVol03/CGB03-blue_M_btn.png" id="1_w4c05"]
+[ext_resource type="FontFile" uid="uid://rs3a0vmhwk3g" path="res://assets/fonts/Mitr/Mitr-Medium.ttf" id="2_fe8y3"]
+[ext_resource type="FontFile" uid="uid://doqsiqn53k5ba" path="res://assets/fonts/Mitr/Mitr-Regular.ttf" id="4_v2fsf"]
+[ext_resource type="Texture2D" uid="uid://diex7aqrlsnue" path="res://assets/arts/icons/icons/chest_4.png" id="5_ih467"]
+[ext_resource type="FontFile" uid="uid://cp4s0b8m6pl2d" path="res://assets/fonts/Mitr/Mitr-Bold.ttf" id="6_a6cm2"]
+[ext_resource type="PackedScene" uid="uid://bwqd0gxendt2t" path="res://scenes/ui/top_menu.tscn" id="9_13f3p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_odq2l"]
+bg_color = Color(0, 0.235294, 0.392157, 0.870588)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Shop" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qxq4a")
+metadata/_edit_use_anchors_ = true
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_3syk2")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 128.0
+offset_right = 2342.0
+offset_bottom = 1054.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Background/HBoxContainer"]
+layout_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="Background/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_w4c05")
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/VBoxContainer/TextureButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.5
+offset_top = -11.5
+offset_right = 37.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fe8y3")
+theme_override_font_sizes/font_size = 35
+text = "ราคาพิเศษ!"
+
+[node name="TextureButton2" type="TextureButton" parent="Background/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_w4c05")
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/VBoxContainer/TextureButton2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.5
+offset_top = -11.5
+offset_right = 37.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fe8y3")
+theme_override_font_sizes/font_size = 35
+text = "ราคาพิเศษ!"
+
+[node name="TextureButton3" type="TextureButton" parent="Background/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_w4c05")
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/VBoxContainer/TextureButton3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.5
+offset_top = -11.5
+offset_right = 37.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fe8y3")
+theme_override_font_sizes/font_size = 35
+text = "ราคาพิเศษ!"
+
+[node name="TextureButton4" type="TextureButton" parent="Background/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_w4c05")
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/VBoxContainer/TextureButton4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.5
+offset_top = -11.5
+offset_right = 37.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fe8y3")
+theme_override_font_sizes/font_size = 35
+text = "ราคาพิเศษ!"
+
+[node name="TextureButton5" type="TextureButton" parent="Background/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_w4c05")
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/VBoxContainer/TextureButton5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.5
+offset_top = -11.5
+offset_right = 37.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fe8y3")
+theme_override_font_sizes/font_size = 35
+text = "ราคาพิเศษ!"
+
+[node name="TextureButton6" type="TextureButton" parent="Background/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_w4c05")
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/VBoxContainer/TextureButton6"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.5
+offset_top = -11.5
+offset_right = 37.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fe8y3")
+theme_override_font_sizes/font_size = 35
+text = "ราคาพิเศษ!"
+
+[node name="TextureButton7" type="TextureButton" parent="Background/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("1_w4c05")
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/VBoxContainer/TextureButton7"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -37.5
+offset_top = -11.5
+offset_right = 37.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fe8y3")
+theme_override_font_sizes/font_size = 35
+text = "ราคาพิเศษ!"
+
+[node name="HSlider" type="ScrollContainer" parent="Background/HBoxContainer"]
+custom_minimum_size = Vector2(2050, 5)
+layout_mode = 2
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Background/HBoxContainer/HSlider"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+
+[node name="GridContainer" type="GridContainer" parent="Background/HBoxContainer/HSlider/MarginContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 15
+columns = 8
+
+[node name="Gachapon" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(500, 926)
+layout_mode = 2
+
+[node name="TopShadow" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Gachapon"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 192.0
+grow_horizontal = 2
+
+[node name="Title" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Gachapon/TopShadow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fe8y3")
+theme_override_font_sizes/font_size = 35
+text = "กาชาเริ่มต้น สำหรับผู้เล่นใหม่"
+horizontal_alignment = 1
+
+[node name="ButtonShadow" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Gachapon"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -54.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="SeeMore" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Gachapon/ButtonShadow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.5
+offset_top = -11.5
+offset_right = 43.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_v2fsf")
+text = "ดูรายละเอียด"
+
+[node name="Items" type="TextureRect" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Gachapon"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -177.0
+offset_top = -177.0
+offset_right = 177.0
+offset_bottom = 177.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_ih467")
+expand_mode = 1
+
+[node name="Price" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Gachapon"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -89.0
+offset_top = -223.0
+offset_right = 89.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_a6cm2")
+theme_override_font_sizes/font_size = 60
+text = "สุ่มฟรี"
+
+[node name="Card2" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(500, 926)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_odq2l")
+
+[node name="TopShadow" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card2"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 192.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card2/TopShadow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fe8y3")
+theme_override_font_sizes/font_size = 35
+text = "สำหรับผู้เล่นมือใหม่เท่านั้น!
+แพ็กเกจอัปเกรดมือใหม่"
+horizontal_alignment = 1
+
+[node name="ButtonShadow" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card2"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -54.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card2/ButtonShadow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.5
+offset_top = -11.5
+offset_right = 43.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_v2fsf")
+text = "ดูรายละเอียด"
+
+[node name="Items" type="TextureRect" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -177.0
+offset_top = -177.0
+offset_right = 177.0
+offset_bottom = 177.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_ih467")
+expand_mode = 1
+
+[node name="Price" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -89.0
+offset_top = -223.0
+offset_right = 89.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_a6cm2")
+theme_override_font_sizes/font_size = 60
+text = "$99.00"
+
+[node name="Card3" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(500, 926)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_odq2l")
+
+[node name="TopShadow" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card3"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 192.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card3/TopShadow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fe8y3")
+theme_override_font_sizes/font_size = 35
+text = "สำหรับผู้เล่นมือใหม่เท่านั้น!
+แพ็กเกจอัปเกรดมือใหม่"
+horizontal_alignment = 1
+
+[node name="ButtonShadow" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card3"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -54.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card3/ButtonShadow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.5
+offset_top = -11.5
+offset_right = 43.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_v2fsf")
+text = "ดูรายละเอียด"
+
+[node name="Items" type="TextureRect" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card3"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -177.0
+offset_top = -177.0
+offset_right = 177.0
+offset_bottom = 177.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_ih467")
+expand_mode = 1
+
+[node name="Price" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card3"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -89.0
+offset_top = -223.0
+offset_right = 89.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_a6cm2")
+theme_override_font_sizes/font_size = 60
+text = "$99.00"
+
+[node name="Card4" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(500, 926)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_odq2l")
+
+[node name="TopShadow" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card4"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 192.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card4/TopShadow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fe8y3")
+theme_override_font_sizes/font_size = 35
+text = "สำหรับผู้เล่นมือใหม่เท่านั้น!
+แพ็กเกจอัปเกรดมือใหม่"
+horizontal_alignment = 1
+
+[node name="ButtonShadow" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card4"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -54.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card4/ButtonShadow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.5
+offset_top = -11.5
+offset_right = 43.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_v2fsf")
+text = "ดูรายละเอียด"
+
+[node name="Items" type="TextureRect" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card4"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -177.0
+offset_top = -177.0
+offset_right = 177.0
+offset_bottom = 177.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_ih467")
+expand_mode = 1
+
+[node name="Price" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card4"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -89.0
+offset_top = -223.0
+offset_right = 89.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_a6cm2")
+theme_override_font_sizes/font_size = 60
+text = "$99.00"
+
+[node name="Card5" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(500, 926)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_odq2l")
+
+[node name="TopShadow" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card5"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 192.0
+grow_horizontal = 2
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card5/TopShadow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fe8y3")
+theme_override_font_sizes/font_size = 35
+text = "สำหรับผู้เล่นมือใหม่เท่านั้น!
+แพ็กเกจอัปเกรดมือใหม่"
+horizontal_alignment = 1
+
+[node name="ButtonShadow" type="Panel" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card5"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -54.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card5/ButtonShadow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.5
+offset_top = -11.5
+offset_right = 43.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_v2fsf")
+text = "ดูรายละเอียด"
+
+[node name="Items" type="TextureRect" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card5"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -177.0
+offset_top = -177.0
+offset_right = 177.0
+offset_bottom = 177.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_ih467")
+expand_mode = 1
+
+[node name="Price" type="Label" parent="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Card5"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -89.0
+offset_top = -223.0
+offset_right = 89.0
+offset_bottom = -144.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_a6cm2")
+theme_override_font_sizes/font_size = 60
+text = "$99.00"
+
+[node name="TopMenu" parent="." instance=ExtResource("9_13f3p")]
+
+[node name="PageTitle" type="Label" parent="TopMenu"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 34.0
+offset_right = 390.0
+offset_bottom = 82.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_v2fsf")
+theme_override_font_sizes/font_size = 30
+text = "ร้านค้าแพ็กเกจ"
+
+[connection signal="gui_input" from="Background/HBoxContainer/HSlider/MarginContainer/GridContainer/Gachapon" to="." method="_on_gachapon_gui_input"]

@@ -1,17 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://c1gvrys153ktd"]
+[gd_scene load_steps=6 format=3 uid="uid://c1gvrys153ktd"]
 
 [ext_resource type="Texture2D" uid="uid://b81el12aqfowg" path="res://icon.svg" id="1_kdnvy"]
+[ext_resource type="Script" path="res://scenes/farm/main_ui.gd" id="1_om6xi"]
 [ext_resource type="Theme" uid="uid://deybxgjwjig16" path="res://themes/btn_gray_m.tres" id="2_qcep4"]
 [ext_resource type="Theme" uid="uid://2woc2v11ise4" path="res://themes/font_normal.tres" id="3_h57fs"]
 [ext_resource type="Theme" uid="uid://b3q04sduprnw6" path="res://themes/resource_bar.tres" id="4_k85hg"]
 
-[node name="MainUi" type="Control"]
+[node name="MainUI" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_om6xi")
 metadata/_edit_use_anchors_ = true
 
 [node name="Username" type="Button" parent="."]
@@ -108,3 +110,6 @@ offset_top = 128.0
 offset_right = 1856.0
 offset_bottom = 176.0
 theme = ExtResource("4_k85hg")
+
+[connection signal="pressed" from="Coin" to="." method="_on_coin_pressed"]
+[connection signal="pressed" from="Dimond" to="." method="_on_coin_pressed"]

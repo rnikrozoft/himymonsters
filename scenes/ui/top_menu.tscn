@@ -1,0 +1,78 @@
+[gd_scene load_steps=9 format=3 uid="uid://cxhrae322ln1m"]
+
+[ext_resource type="Theme" uid="uid://b3q04sduprnw6" path="res://themes/resource_bar.tres" id="1_4i05n"]
+[ext_resource type="Script" path="res://scenes/ui/top_menu.gd" id="1_gwpiq"]
+[ext_resource type="Texture2D" uid="uid://baom0mijomwmk" path="res://himymonsters-assets/arts/icons/icons/coin.png" id="3_kdvrd"]
+[ext_resource type="Texture2D" uid="uid://uhlyu8domi32" path="res://himymonsters-assets/arts/icons/icons/gem_4.png" id="4_7r78r"]
+[ext_resource type="Texture2D" uid="uid://qlqhj1v33h7t" path="res://himymonsters-assets/arts/icons/‏‏icon style 1/64w/icon_setting.png" id="5_ys2je"]
+[ext_resource type="Texture2D" uid="uid://mxqir3w4frs0" path="res://himymonsters-assets/arts/icons/‏‏icon style 1/64w/icon_home.png" id="6_287lo"]
+[ext_resource type="Texture2D" uid="uid://dtyrchqlto82n" path="res://himymonsters-assets/arts/icons/‏‏icon style 1/64w/icon_notification.png" id="7_vv0wc"]
+[ext_resource type="Texture2D" uid="uid://d3j28p221n5qv" path="res://himymonsters-assets/arts/icons/‏‏icon style 1/64w/icon_back.png" id="9_n2iqd"]
+
+[node name="TopMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_gwpiq")
+
+[node name="Coin" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1412.0
+offset_top = 40.0
+offset_right = 1640.0
+offset_bottom = 96.0
+theme = ExtResource("1_4i05n")
+text = "6,999,000"
+icon = ExtResource("3_kdvrd")
+alignment = 0
+expand_icon = true
+
+[node name="Dimond" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1191.0
+offset_top = 40.0
+offset_right = 1399.0
+offset_bottom = 96.0
+theme = ExtResource("1_4i05n")
+text = "5,300"
+icon = ExtResource("4_7r78r")
+expand_icon = true
+
+[node name="Setting" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1832.0
+offset_top = 32.0
+offset_right = 1896.0
+offset_bottom = 102.0
+texture_normal = ExtResource("5_ys2je")
+
+[node name="Home" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1744.0
+offset_top = 32.0
+offset_right = 1808.0
+offset_bottom = 104.0
+texture_normal = ExtResource("6_287lo")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Notification" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1656.0
+offset_top = 32.0
+offset_right = 1720.0
+offset_bottom = 100.0
+texture_normal = ExtResource("7_vv0wc")
+
+[node name="Back" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 96.0
+offset_bottom = 96.0
+texture_normal = ExtResource("9_n2iqd")
+ignore_texture_size = true
+stretch_mode = 0
+
+[connection signal="pressed" from="Coin" to="." method="_on_dimond_and_coin_pressed"]
+[connection signal="pressed" from="Dimond" to="." method="_on_dimond_and_coin_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

@@ -1,0 +1,202 @@
+[gd_scene load_steps=46 format=3 uid="uid://bvldg0jl3rq42"]
+
+[ext_resource type="Script" path="res://scenes/monsters/monster.gd" id="1_ptcw7"]
+[ext_resource type="Texture2D" uid="uid://bnbau83rx42mk" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_000.png" id="2_kg7gk"]
+[ext_resource type="Texture2D" uid="uid://cukrn26qwh724" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_001.png" id="3_th6gw"]
+[ext_resource type="Texture2D" uid="uid://cgsindcnsquv1" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_002.png" id="4_c7uu8"]
+[ext_resource type="Texture2D" uid="uid://c1cng5adgddn8" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_003.png" id="5_r8281"]
+[ext_resource type="Texture2D" uid="uid://cgmb33yge2cb5" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_004.png" id="6_wdqj1"]
+[ext_resource type="Texture2D" uid="uid://cyok3dwv1e3cu" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_005.png" id="7_ygcxj"]
+[ext_resource type="Texture2D" uid="uid://b3mmlqiaj6pdl" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_006.png" id="8_wt8y8"]
+[ext_resource type="Texture2D" uid="uid://df0yn47jpjuir" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_007.png" id="9_sjt4u"]
+[ext_resource type="Texture2D" uid="uid://cavl5bbuxlpbn" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_008.png" id="10_gcvsq"]
+[ext_resource type="Texture2D" uid="uid://bv085ssy0goho" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_009.png" id="11_f18p7"]
+[ext_resource type="Texture2D" uid="uid://5yjwgo6553jx" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_010.png" id="12_rqohs"]
+[ext_resource type="Texture2D" uid="uid://dd2e4qmxpx4nu" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_011.png" id="13_6p6mx"]
+[ext_resource type="Texture2D" uid="uid://b7e32w7hx4bp7" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_012.png" id="14_gc3e6"]
+[ext_resource type="Texture2D" uid="uid://bbb530jcmt86a" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_013.png" id="15_epufv"]
+[ext_resource type="Texture2D" uid="uid://d3uqofgow8ll7" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_014.png" id="16_xnrar"]
+[ext_resource type="Texture2D" uid="uid://fc1h2jl7ixjc" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_015.png" id="17_6orrj"]
+[ext_resource type="Texture2D" uid="uid://pispsgdwttoj" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_016.png" id="18_7nnat"]
+[ext_resource type="Texture2D" uid="uid://b6333gl3br4dl" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_017.png" id="19_jskie"]
+[ext_resource type="Texture2D" uid="uid://cjwlsarn6cw5a" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_000.png" id="20_osc1e"]
+[ext_resource type="Texture2D" uid="uid://dgljt3vphdrrc" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_001.png" id="21_bun06"]
+[ext_resource type="Texture2D" uid="uid://cysmjenv6crbp" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_002.png" id="22_qplkt"]
+[ext_resource type="Texture2D" uid="uid://wpnnbyv2d0ro" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_003.png" id="23_4gahs"]
+[ext_resource type="Texture2D" uid="uid://no5yqv3t3dnu" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_004.png" id="24_luh21"]
+[ext_resource type="Texture2D" uid="uid://djuxew846bipy" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_005.png" id="25_i8fnr"]
+[ext_resource type="Texture2D" uid="uid://c8h0skjxd0vmc" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_006.png" id="26_ty53k"]
+[ext_resource type="Texture2D" uid="uid://clwjv4stxjmkr" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_007.png" id="27_ln1kw"]
+[ext_resource type="Texture2D" uid="uid://clqpkbhraf1sq" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_008.png" id="28_uysqq"]
+[ext_resource type="Texture2D" uid="uid://d1v2lj2inbgje" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_009.png" id="29_c5kfs"]
+[ext_resource type="Texture2D" uid="uid://dpsod656g1ecg" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_010.png" id="30_uby2l"]
+[ext_resource type="Texture2D" uid="uid://c838dumsyxchg" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_011.png" id="31_8ichh"]
+[ext_resource type="Texture2D" uid="uid://bfqq1bkgvk7o2" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_012.png" id="32_ug0m7"]
+[ext_resource type="Texture2D" uid="uid://clkjes8ns4y3" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_013.png" id="33_qjlhq"]
+[ext_resource type="Texture2D" uid="uid://nq1a5gfpv18q" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_014.png" id="34_41ge6"]
+[ext_resource type="Texture2D" uid="uid://brbwcu6es6wjk" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_015.png" id="35_mughd"]
+[ext_resource type="Texture2D" uid="uid://dr3ax2xi5lkmv" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_016.png" id="36_03gdg"]
+[ext_resource type="Texture2D" uid="uid://cldrxpg7ytlf7" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_017.png" id="37_hxnnm"]
+[ext_resource type="Texture2D" uid="uid://c0xkxoecbvyrb" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_018.png" id="38_d4wjc"]
+[ext_resource type="Texture2D" uid="uid://cfxlgpvtty3v" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_019.png" id="39_2aey7"]
+[ext_resource type="Texture2D" uid="uid://djosf26vbdl8g" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_020.png" id="40_ce403"]
+[ext_resource type="Texture2D" uid="uid://50uqvei5uh4y" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_021.png" id="41_a3yy3"]
+[ext_resource type="Texture2D" uid="uid://8iylf2b2odqv" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_022.png" id="42_tk0pl"]
+[ext_resource type="Texture2D" uid="uid://s5jbktiqveui" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Walking/0_Fallen_Angels_Walking_023.png" id="43_o17by"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_potkr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_kg7gk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_th6gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_c7uu8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_r8281")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wdqj1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ygcxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_wt8y8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_sjt4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gcvsq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_f18p7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_rqohs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_6p6mx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gc3e6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_epufv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_xnrar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6orrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7nnat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_jskie")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("20_osc1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_bun06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_qplkt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_4gahs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_luh21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_i8fnr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ty53k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ln1kw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_uysqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_c5kfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_uby2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_8ichh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ug0m7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_qjlhq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_41ge6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_mughd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_03gdg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_hxnnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_d4wjc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_2aey7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_ce403")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_a3yy3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_tk0pl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_o17by")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ghsic"]
+size = Vector2(64, 55)
+
+[node name="Fallen1" type="RigidBody2D"]
+gravity_scale = 0.0
+lock_rotation = true
+freeze = true
+script = ExtResource("1_ptcw7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+sprite_frames = SubResource("SpriteFrames_potkr")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, 63.5)
+shape = SubResource("RectangleShape2D_ghsic")

@@ -1,7 +1,7 @@
 [gd_resource type="Theme" load_steps=7 format=3 uid="uid://mh63emy3k32r"]
 
-[ext_resource type="FontFile" uid="uid://ohf26q7imoth" path="res://assets/fonts/Mitr/Mitr-SemiBold.ttf" id="1_2bb5k"]
-[ext_resource type="Texture2D" uid="uid://bs3mn2kac13b7" path="res://assets/arts/buttons/CasualGameButtonsVol03/CGB03-red_S_btn.png" id="2_evbxh"]
+[ext_resource type="FontFile" uid="uid://ohf26q7imoth" path="res://himymonsters-assets/fonts/Mitr/Mitr-SemiBold.ttf" id="1_2bb5k"]
+[ext_resource type="Texture2D" uid="uid://bs3mn2kac13b7" path="res://himymonsters-assets/arts/buttons/CasualGameButtonsVol03/CGB03-red_S_btn.png" id="2_evbxh"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bhbea"]
 

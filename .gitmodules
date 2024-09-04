@@ -1,0 +1,3 @@
+[submodule "himymonsters-assets"]
+	path = himymonsters-assets
+	url = https://github.com/rnikrozoft/himymonsters-assets.git

@@ -6,6 +6,7 @@
 [node name="FriendCard" type="Panel"]
 offset_right = 770.0
 offset_bottom = 265.0
+mouse_filter = 2
 script = ExtResource("1_mgr7i")
 
 [node name="Avartar" type="TextureRect" parent="."]

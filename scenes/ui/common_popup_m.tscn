@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://de62k0qo0n4dv"]
+[gd_scene load_steps=5 format=3 uid="uid://de62k0qo0n4dv"]
 
 [ext_resource type="Texture2D" uid="uid://buipjokkn2f1t" path="res://himymonsters-assets/arts/backgrounds/2567-08-17_23-32-57.png" id="1_krx3e"]
+[ext_resource type="Script" path="res://scenes/ui/common_popup_m.gd" id="1_lidqb"]
 [ext_resource type="FontFile" uid="uid://cp4s0b8m6pl2d" path="res://himymonsters-assets/fonts/Mitr/Mitr-Bold.ttf" id="2_0pud7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l004e"]
@@ -11,6 +12,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
+script = ExtResource("1_lidqb")
 
 [node name="BackgroundShadow" type="Panel" parent="."]
 layout_mode = 1
@@ -60,3 +62,10 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("2_0pud7")
 theme_override_font_sizes/font_size = 100
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

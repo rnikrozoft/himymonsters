@@ -11,7 +11,7 @@ func _on_coin_pressed() -> void:
 func _on_friends_pressed() -> void:
 	var friends_scene = load("res://scenes/friends/friends.tscn")
 	var friends = friends_scene.instantiate()
-	add_child(friends)
+	get_parent().get_parent().add_child(friends)
 
 func _on_back_to_my_farm_pressed() -> void:
 	Global.set_visit_to_my_farm()

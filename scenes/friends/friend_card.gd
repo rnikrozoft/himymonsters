@@ -32,7 +32,6 @@ func _on_goto_farm_pressed() -> void:
 	if leave.is_exception():
 		print("An error occurred: %s" % leave)
 		return
-	
 	var match_id = await Global.create_match(user.id)
 	Global.set_visit_to_other_farm(match_id, user.id)
 	get_tree().change_scene_to_file("res://scenes/farm/farm.tscn")

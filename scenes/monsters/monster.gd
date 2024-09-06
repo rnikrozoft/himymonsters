@@ -1,17 +1,17 @@
 extends RigidBody2D
 
 var monster_id
-
-var speed = 100
-var direction = Vector2.ZERO
-var is_moving = true
-var timer = 0.0
-var change_time = 2.0
-var is_stopped = false
-
-var farm
-
 @onready var character = $AnimatedSprite2D
+@onready var movement_configs = {
+	"timer": 0.0,
+	"change_time": 2.0,
+	
+	"speed": 100,
+	"direction": Vector2.ZERO,
+	
+	"is_moving": true,
+	"is_stopped": false
+}
 
 func _ready():
 	$Label.text = monster_id
@@ -26,30 +26,30 @@ func _on_monster_clicked(viewport, event, shape_idx):
 			Alert.steal_or_kill(self)
 
 func _process(delta):
-	if is_stopped:
+	if movement_configs.is_stopped:
 		return
 	
-	timer += delta
-	if timer >= change_time:
-		timer = 0.0
+	movement_configs.timer += delta
+	if movement_configs.timer >= movement_configs.change_time:
+		movement_configs.timer = 0.0
 		toggle_movement()
 	
-	if is_moving:
+	if movement_configs.is_moving:
 		handle_movement(delta)
 		update_animation_direction()
 
 func handle_movement(delta):
-	var movement = direction * speed * delta
+	var movement = movement_configs.direction * movement_configs.speed * delta
 	var collision = move_and_collide(movement)
 	if collision:
-		direction = direction.bounce(collision.get_normal())
+		movement_configs.direction = movement_configs.direction.bounce(collision.get_normal())
 
 func update_animation_direction():
-	character.flip_h = direction.x < 0
+	character.flip_h = movement_configs.direction.x < 0
 
 func toggle_movement():
-	is_moving = !is_moving
-	if is_moving:
+	movement_configs.is_moving = !movement_configs.is_moving
+	if movement_configs.is_moving:
 		change_direction()
 		set_random_change_time()
 		character.play("walk")
@@ -58,13 +58,13 @@ func toggle_movement():
 		character.play("idle")
 
 func change_direction():
-	direction = Vector2(randf_range(-1, 1), randf_range(-1, 1)).normalized()
+	movement_configs.direction = Vector2(randf_range(-1, 1), randf_range(-1, 1)).normalized()
 
 func set_random_change_time():
-	change_time = randf_range(1.0, 3.0)
+	movement_configs.change_time = randf_range(1.0, 3.0)
 
 func stop_movement():
-	is_stopped = true
-	is_moving = false
+	movement_configs.is_stopped = true
+	movement_configs.is_moving = false
 	character.stop()
 	character.play("idle")

@@ -6,19 +6,13 @@ func _ready():
 	var user_id = await initialize_user()
 	Global.socket.received_match_state.connect(_on_match_state)
 	
-	var my_monsters = Global.player_data.my_monsters
-	if Global.player_data.my_monsters == null:
-		my_monsters = await Global.get_monsters(user_id)
+	var my_monsters = await Global.get_monsters(user_id)
 	spawn_monsters(my_monsters)
 	add_child(main_ui_node.instantiate())
 
 func initialize_user() -> String:
 	if Global.is_my_farm:
-		var created = await Global.create_match(Global.session.user_id)
-		if created == "":
-			print("cannot create my farm")
-			return ""
-			
+		Global.match_id = await Global.create_match(Global.session.user_id)
 		return Global.session.user_id
 	else:
 		var joined = await Global.socket.join_match_async(Global.match_id)
@@ -31,6 +25,7 @@ func initialize_user() -> String:
 func _on_match_state(p_state):
 	if p_state.op_code == 1:
 		var state_data = JSON.parse_string(p_state.data)
+		print("state_data ",state_data)
 		remove_monster(state_data.monster_id)
 		
 		if Global.is_my_farm:
@@ -39,24 +34,19 @@ func _on_match_state(p_state):
 			$RichTextLabel.text = ""
 
 func remove_monster(monster_id: String):
-	var scene = $Background/Monsters
-	var monster_node = scene.get_node(monster_id)
+	var monster_node = get_node(monster_id)
 	if monster_node:
 		monster_node.queue_free()
 
 func spawn_monsters(monsters: Array):
 	for monster in monsters:
-		#var monster_keys = Global.MONSTER_TYPES.keys()
-		#monster_keys.shuffle()
-		#var random_monster_key = monster_keys[0]
-		#var monster_scene = Global.MONSTER_TYPES[random_monster_key]
-		var monster_scene = Global.MONSTER_TYPES.get(monster.monster_type, Global.MONSTER_TYPES["reaperman_3"])
-		
+		var monster_scene = Global.MONSTER_TYPES.get(monster.monster_type, Global.MONSTER_TYPES["reaperman_1"])
 		var monster_instance = monster_scene.instantiate()
 		monster_instance.name = monster.id
 		monster_instance.position = Vector2(
 			randf_range(128, 1790), 
 			randf_range(456, 950)   
 		)
+		
 		monster_instance.monster_id = monster.id
 		add_child(monster_instance)

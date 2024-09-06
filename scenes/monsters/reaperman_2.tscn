@@ -200,3 +200,16 @@ animation = &"walk"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-3, 63.5)
 shape = SubResource("RectangleShape2D_qj1xs")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -154.0
+offset_top = -109.0
+offset_right = 158.0
+offset_bottom = -86.0
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PackedVector2Array(13, -80, 52, -58, 66, -28, 62, 3, 57, 23, 27, 42, 32, 80, 12, 95, -32, 86, -34, 75, -30, 43, -48, 33, -64, 13, -64, -9, -59, -35, -50, -61, -14, -81)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_monster_clicked"]

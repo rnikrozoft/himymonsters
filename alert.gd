@@ -1,12 +1,6 @@
-class_name Alert
+extends Node
 
-func steal_or_kill(el):
-	var steal_or_kill = preload("res://scenes/ui/steal_or_kill_popup.tscn")
-	var steal_or_kill_scene = steal_or_kill.instantiate()
-	
-	steal_or_kill_scene.monster_id = el.monster_id
-	steal_or_kill_scene.farm_node = el
-	el.get_tree().current_scene.add_child(steal_or_kill_scene)
-
-func close(el):
-	el.queue_free()
+func steal_or_kill(parent_node):
+	var steal_or_kill_popup = Global.ALERTS_SCENES[Global.steal_or_kill].instantiate()
+	steal_or_kill_popup.set_parent_node(parent_node)
+	parent_node.get_parent().add_child(steal_or_kill_popup)

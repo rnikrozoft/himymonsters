@@ -1,14 +1,11 @@
 extends Node2D
 
 var monster
-var refabs = {
-	"minotaur_3": preload("res://scenes/monsters/minotaur_3.tscn"),
-}
 func _ready() -> void:
-	var popup_scene = refabs["minotaur_3"]
-	var monster_instance = popup_scene.instantiate()
+	var monster_scene = load("res://scenes/monsters/"+monster.monster_type+".tscn")
+	var monster_instance = monster_scene.instantiate()
+	monster_instance.monster_id = monster.id
 	$Background.add_child(monster_instance)
-
 
 func _on_background_gui_input(event: InputEvent) -> void:
 	if Global.is_left_click(event):

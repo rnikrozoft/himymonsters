@@ -12,7 +12,7 @@ func _on_loggin_with_guest_pressed():
 		var connected = await Global.socket.connect_async(Global.session)
 		if connected.is_exception():
 			print("cannot connect to socket on server: %s" % connected)
-			return ""
+			return
 			
 		Global.set_visit_to_my_farm()
 		change_scene_to_farm()
@@ -22,6 +22,7 @@ func authenticate_device(device_id: String) -> NakamaSession:
 	if session.is_exception():
 		print("Authentication failed: %s" % session)
 		return null
+		
 	return session
 
 func register_user(device_id: String) -> void:

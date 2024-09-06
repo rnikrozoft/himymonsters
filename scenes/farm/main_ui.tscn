@@ -13,8 +13,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 script = ExtResource("1_om6xi")
-metadata/_edit_use_anchors_ = true
 
 [node name="Username" type="Button" parent="."]
 layout_mode = 0
@@ -22,7 +22,6 @@ offset_left = 184.0
 offset_top = 80.0
 offset_right = 384.0
 offset_bottom = 120.0
-text = "Jirawat Charoonnet"
 
 [node name="Avartar" type="TextureRect" parent="."]
 layout_mode = 0
@@ -40,6 +39,16 @@ offset_right = 194.0
 offset_bottom = 1024.0
 theme = ExtResource("2_qcep4")
 text = "ประกาศ"
+
+[node name="BackToMyFarm" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 64.0
+offset_top = 872.0
+offset_right = 194.0
+offset_bottom = 936.0
+theme = ExtResource("2_qcep4")
+text = "กลับ"
 
 [node name="Friends" type="Button" parent="."]
 layout_mode = 0
@@ -111,5 +120,7 @@ offset_right = 1856.0
 offset_bottom = 176.0
 theme = ExtResource("4_k85hg")
 
+[connection signal="pressed" from="BackToMyFarm" to="." method="_on_back_to_my_farm_pressed"]
+[connection signal="pressed" from="Friends" to="." method="_on_friends_pressed"]
 [connection signal="pressed" from="Coin" to="." method="_on_coin_pressed"]
 [connection signal="pressed" from="Dimond" to="." method="_on_coin_pressed"]

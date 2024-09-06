@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://h1871ofbmjxb"]
 
-[ext_resource type="Texture2D" uid="uid://dfm0rbp0trg46" path="res://assets/arts/1920x1080.svg" id="1_l0smt"]
+[ext_resource type="Texture2D" uid="uid://dfm0rbp0trg46" path="res://himymonsters-assets/arts/1920x1080.svg" id="1_l0smt"]
 [ext_resource type="Theme" uid="uid://c6pfewoyajmyj" path="res://themes/btn_green_m.tres" id="2_pxncr"]
 [ext_resource type="Script" path="res://scenes/home/home.gd" id="2_swj43"]
 

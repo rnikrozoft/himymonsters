@@ -56,3 +56,10 @@ shape = SubResource("RectangleShape2D_n8y7b")
 [node name="Right" type="CollisionShape2D" parent="Walls"]
 position = Vector2(1910, 714)
 shape = SubResource("RectangleShape2D_n8y7b")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 504.0
+offset_top = 16.0
+offset_right = 1420.0
+offset_bottom = 212.0
+theme_override_font_sizes/normal_font_size = 100

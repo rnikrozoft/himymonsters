@@ -201,6 +201,12 @@ animation = &"walk"
 position = Vector2(-3, 63.5)
 shape = SubResource("RectangleShape2D_al0or")
 
+[node name="Label" type="Label" parent="."]
+offset_left = -155.0
+offset_top = -111.0
+offset_right = 157.0
+offset_bottom = -88.0
+
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]

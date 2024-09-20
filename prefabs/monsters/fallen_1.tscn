@@ -1,0 +1,89 @@
+[gd_scene load_steps=21 format=3 uid="uid://cxju0bwk7lfqj"]
+
+[ext_resource type="Texture2D" uid="uid://bnbau83rx42mk" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_000.png" id="1_tivss"]
+[ext_resource type="Texture2D" uid="uid://cukrn26qwh724" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_001.png" id="2_wjyp1"]
+[ext_resource type="Texture2D" uid="uid://cgsindcnsquv1" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_002.png" id="3_icvcd"]
+[ext_resource type="Texture2D" uid="uid://c1cng5adgddn8" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_003.png" id="4_667o7"]
+[ext_resource type="Texture2D" uid="uid://cgmb33yge2cb5" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_004.png" id="5_tlnpa"]
+[ext_resource type="Texture2D" uid="uid://cyok3dwv1e3cu" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_005.png" id="6_2ub1a"]
+[ext_resource type="Texture2D" uid="uid://b3mmlqiaj6pdl" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_006.png" id="7_j8xtl"]
+[ext_resource type="Texture2D" uid="uid://df0yn47jpjuir" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_007.png" id="8_xyb3y"]
+[ext_resource type="Texture2D" uid="uid://cavl5bbuxlpbn" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_008.png" id="9_bcyme"]
+[ext_resource type="Texture2D" uid="uid://bv085ssy0goho" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_009.png" id="10_pdf66"]
+[ext_resource type="Texture2D" uid="uid://5yjwgo6553jx" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_010.png" id="11_s2wbb"]
+[ext_resource type="Texture2D" uid="uid://dd2e4qmxpx4nu" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_011.png" id="12_pc6rq"]
+[ext_resource type="Texture2D" uid="uid://b7e32w7hx4bp7" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_012.png" id="13_p21rm"]
+[ext_resource type="Texture2D" uid="uid://bbb530jcmt86a" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_013.png" id="14_qa7ke"]
+[ext_resource type="Texture2D" uid="uid://d3uqofgow8ll7" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_014.png" id="15_5puvi"]
+[ext_resource type="Texture2D" uid="uid://fc1h2jl7ixjc" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_015.png" id="16_eexnl"]
+[ext_resource type="Texture2D" uid="uid://pispsgdwttoj" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_016.png" id="17_tnuo6"]
+[ext_resource type="Texture2D" uid="uid://b6333gl3br4dl" path="res://himymonsters-assets/arts/monsters/Fallen_Angels_1/Idle Blinking/0_Fallen_Angels_Idle Blinking_017.png" id="18_72jys"]
+[ext_resource type="Script" path="res://prefabs/monsters/play_animation.gd" id="19_513xa"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qvk0k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_tivss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wjyp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_icvcd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_667o7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_tlnpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2ub1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_j8xtl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xyb3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bcyme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pdf66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_s2wbb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pc6rq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_p21rm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_qa7ke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_5puvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_eexnl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_tnuo6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_72jys")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}]
+
+[node name="Fallen1" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_qvk0k")
+animation = &"idle"
+frame_progress = 0.522514
+script = ExtResource("19_513xa")

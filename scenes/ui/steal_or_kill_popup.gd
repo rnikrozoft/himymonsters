@@ -9,7 +9,7 @@ func _on_kill_pressed() -> void:
 	$BackGroundShadow/HBoxContainer/MarginLeftButton/Steal.disabled = true
 	var response = await Global.client.rpc_async(Global.session, "kill_monster", JSON.stringify({
 		"owner_id": Global.owner_id,
-		"monster_id": monster_node.monster_id,
+		"monster_id": monster_node.monster.id,
 	}))
 	if response.is_exception():
 		print("An error occurred: %s" % response)
@@ -23,11 +23,15 @@ func _on_kill_pressed() -> void:
 	if response.payload == "true": #TODO
 		popup_instance.get_node("BackgroundShadow/Card/Label").text = "ฆ่าสำเร็จ"
 		payload = {
-			"monster_id": monster_node.monster_id
+			"monster_id": monster_node.monster.id,
+			"monster_kill_price": monster_node.monster.kill.price
 		}
 		monster_node.queue_free()
 	else:
 		op_code = 2
+		payload = {
+			"monster_kill_price": monster_node.monster.kill.price
+		}
 		if monster_node != null:
 			popup_instance.get_node("BackgroundShadow/Card/Label").text = "ฆ่าไม่สำเร็จ"
 			monster_node.movement_configs.is_moving = true
@@ -53,7 +57,7 @@ func _on_steal_pressed() -> void:
 	$BackGroundShadow/HBoxContainer/MarginRightButton/Kill.disabled = true
 	var response = await Global.client.rpc_async(Global.session, "steal_monster", JSON.stringify({
 		"owner_id": Global.owner_id,
-		"monster_id": monster_node.monster_id,
+		"monster_id": monster_node.monster.id,
 	}))
 	if response.is_exception():
 		print("An error occurred: %s" % response)
@@ -67,7 +71,7 @@ func _on_steal_pressed() -> void:
 	if response.payload == "true": #TODO
 		popup_instance.get_node("BackgroundShadow/Card/Label").text = "ขโมยสำเร็จ"
 		payload = {
-			"monster_id": monster_node.monster_id
+			"monster_id": monster_node.monster.id
 		}
 		monster_node.queue_free()
 	else:

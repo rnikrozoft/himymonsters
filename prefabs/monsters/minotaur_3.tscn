@@ -1,0 +1,88 @@
+[gd_scene load_steps=21 format=3 uid="uid://x46541w4vbvd"]
+
+[ext_resource type="Texture2D" uid="uid://cj1pf4gylotve" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_000.png" id="1_20vi1"]
+[ext_resource type="Texture2D" uid="uid://daich2b0vlagu" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_001.png" id="2_wkoix"]
+[ext_resource type="Texture2D" uid="uid://b32tdgv72ef0" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_002.png" id="3_cu2ju"]
+[ext_resource type="Texture2D" uid="uid://bmulhe2qpl800" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_003.png" id="4_3f1nq"]
+[ext_resource type="Texture2D" uid="uid://chmqadftxhrrt" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_004.png" id="5_lguld"]
+[ext_resource type="Texture2D" uid="uid://d1qqohiw3s3wn" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_005.png" id="6_x34va"]
+[ext_resource type="Texture2D" uid="uid://bjyum0qxs12i2" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_006.png" id="7_ajxti"]
+[ext_resource type="Texture2D" uid="uid://b3xxn287xqp1f" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_007.png" id="8_rope0"]
+[ext_resource type="Texture2D" uid="uid://b0kcx4cupcvkj" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_008.png" id="9_wq2ot"]
+[ext_resource type="Texture2D" uid="uid://ct3d7wpkd61oe" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_009.png" id="10_u4o0v"]
+[ext_resource type="Texture2D" uid="uid://dqwnbsb1wiib5" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_010.png" id="11_nf8wv"]
+[ext_resource type="Texture2D" uid="uid://d287ysdlnysnb" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_011.png" id="12_ykqcg"]
+[ext_resource type="Texture2D" uid="uid://dfq3d6f2hfn6u" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_012.png" id="13_q7jp8"]
+[ext_resource type="Texture2D" uid="uid://dbjuy0qksv3ij" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_013.png" id="14_pufrj"]
+[ext_resource type="Texture2D" uid="uid://ccb72q6o8b32l" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_014.png" id="15_xfv2w"]
+[ext_resource type="Texture2D" uid="uid://c0hrd3rnl4v0r" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_015.png" id="16_e3isb"]
+[ext_resource type="Texture2D" uid="uid://cpsgua7ns785u" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_016.png" id="17_1jjrh"]
+[ext_resource type="Texture2D" uid="uid://bmqtcc480nywi" path="res://himymonsters-assets/arts/monsters/Minotaur_3/Idle Blinking/0_Minotaur_Idle Blinking_017.png" id="18_cwmtt"]
+[ext_resource type="Script" path="res://prefabs/monsters/play_animation.gd" id="19_6y6rp"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jjovh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_20vi1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wkoix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_cu2ju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_3f1nq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lguld")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_x34va")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ajxti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rope0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_wq2ot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_u4o0v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_nf8wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ykqcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_q7jp8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_pufrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_xfv2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_e3isb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_1jjrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_cwmtt")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}]
+
+[node name="Minotaur3" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_jjovh")
+animation = &"idle"
+script = ExtResource("19_6y6rp")

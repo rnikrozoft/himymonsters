@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-var monster_id
+@onready var monster
 @onready var character = $AnimatedSprite2D
 @onready var movement_configs = {
 	"timer": 0.0,
@@ -14,7 +14,7 @@ var monster_id
 }
 
 func _ready():
-	$Label.text = monster_id
+	$Label.text = monster.id
 	change_direction()
 	set_random_change_time()
 	character.play("walk")
@@ -24,6 +24,8 @@ func _on_monster_clicked(viewport, event, shape_idx):
 		stop_movement()
 		if !Global.is_my_farm:
 			Alert.steal_or_kill(self)
+		else:
+			Alert.monster_info(self)
 
 func _process(delta):
 	if movement_configs.is_stopped:

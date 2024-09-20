@@ -1,0 +1,232 @@
+[gd_scene load_steps=11 format=3 uid="uid://d21k8dle74m8k"]
+
+[ext_resource type="Texture2D" uid="uid://bqg5j0wnvqd7v" path="res://himymonsters-assets/arts/backgrounds/2211.w030.n003.491B.p1.491.jpg" id="2_hih83"]
+[ext_resource type="FontFile" uid="uid://cp4s0b8m6pl2d" path="res://himymonsters-assets/fonts/Mitr/Mitr-Bold.ttf" id="3_oly15"]
+[ext_resource type="FontFile" uid="uid://doqsiqn53k5ba" path="res://himymonsters-assets/fonts/Mitr/Mitr-Regular.ttf" id="4_agsro"]
+[ext_resource type="PackedScene" uid="uid://cxhrae322ln1m" path="res://scenes/ui/top_menu.tscn" id="6_2h2ry"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3x5s6"]
+bg_color = Color(0.47451, 0.721569, 0.0784314, 1)
+border_width_bottom = 10
+border_color = Color(0.364706, 0.533333, 0.152941, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0.153913, 0.205464, 0.038092, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qqcqy"]
+content_margin_top = 10.0
+bg_color = Color(0.47451, 0.721569, 0.0745098, 1)
+border_width_bottom = 10
+border_color = Color(0.364706, 0.533333, 0.152941, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="Theme" id="Theme_fe2b7"]
+default_font_size = 30
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 15
+Button/font_sizes/font_size = 25
+Button/fonts/font = ExtResource("4_agsro")
+Button/styles/hover = SubResource("StyleBoxFlat_3x5s6")
+Button/styles/normal = SubResource("StyleBoxFlat_3x5s6")
+Button/styles/pressed = SubResource("StyleBoxFlat_qqcqy")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_67arv"]
+bg_color = Color(0.6, 0.6, 0.6, 0.607843)
+border_width_bottom = 5
+border_color = Color(0.8, 0.8, 0.8, 0.54902)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eh60c"]
+content_margin_top = 10.0
+bg_color = Color(0.6, 0.6, 0.6, 0.607843)
+border_width_bottom = 10
+border_color = Color(0.8, 0.8, 0.8, 0.54902)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="Theme" id="Theme_uo20c"]
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 15
+Button/font_sizes/font_size = 30
+Button/fonts/font = ExtResource("4_agsro")
+Button/styles/hover = SubResource("StyleBoxFlat_67arv")
+Button/styles/normal = SubResource("StyleBoxFlat_67arv")
+Button/styles/pressed = SubResource("StyleBoxFlat_eh60c")
+
+[node name="MyMonsters" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_hih83")
+expand_mode = 1
+
+[node name="Label3" type="Label" parent="Background"]
+layout_mode = 0
+offset_left = 392.0
+offset_top = 16.0
+offset_right = 451.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(0.797975, 0.598169, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_oly15")
+theme_override_font_sizes/font_size = 50
+text = "24"
+
+[node name="Label2" type="Label" parent="Background"]
+layout_mode = 0
+offset_left = 459.0
+offset_top = 34.0
+offset_right = 525.0
+offset_bottom = 82.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_agsro")
+theme_override_font_sizes/font_size = 30
+text = "/ 30"
+
+[node name="Upgrade" type="Button" parent="Background"]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 136.0
+offset_right = 394.0
+offset_bottom = 216.0
+theme = SubResource("Theme_fe2b7")
+text = "อัพเกรดในครั้งเดียว"
+
+[node name="Sort" type="Button" parent="Background"]
+layout_mode = 0
+offset_left = 1600.0
+offset_top = 136.0
+offset_right = 1792.0
+offset_bottom = 216.0
+theme = SubResource("Theme_uo20c")
+text = "อันดับล่าสุด"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Background"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 256.0
+offset_right = 1792.0
+offset_bottom = 1024.0
+horizontal_scroll_mode = 0
+
+[node name="GridContainer" type="GridContainer" parent="Background/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 5
+
+[node name="Panel" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel2" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel3" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel4" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel5" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel6" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel7" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel8" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel9" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel10" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel11" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel12" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel13" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel14" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel15" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="Panel16" type="Panel" parent="Background/ScrollContainer/GridContainer"]
+custom_minimum_size = Vector2(310, 260)
+layout_mode = 2
+mouse_filter = 1
+
+[node name="TopMenu" parent="." instance=ExtResource("6_2h2ry")]
+
+[node name="PageTitle" type="Label" parent="TopMenu"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 34.0
+offset_right = 390.0
+offset_bottom = 82.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_agsro")
+theme_override_font_sizes/font_size = 30
+text = "มอนสเตอร์ของคุณ : "

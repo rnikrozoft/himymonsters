@@ -21,6 +21,13 @@ var MONSTER_TYPES = {
 func is_left_click(event: InputEvent) -> bool:
 	return event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed
 
+func get_my_info():
+	var account : NakamaAPI.ApiAccount = await client.get_account_async(session)
+	if account.is_exception():
+		print("An error occurred: %s" % account)
+		return
+	return account
+
 func get_monsters(user_id: String):
 	var monsters = await client.rpc_async(session, "get_monsters",JSON.stringify({
 		"owner_id": user_id

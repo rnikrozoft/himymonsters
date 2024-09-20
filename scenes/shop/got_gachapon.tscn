@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bjiki2q42bqbg"]
 
-[ext_resource type="Texture2D" uid="uid://cvxbbfuasc3je" path="res://assets/arts/backgrounds/istockphoto-1169276040-612x612.jpg" id="1_cr512"]
+[ext_resource type="Texture2D" uid="uid://cvxbbfuasc3je" path="res://himymonsters-assets/arts/backgrounds/istockphoto-1169276040-612x612.jpg" id="1_cr512"]
 [ext_resource type="Script" path="res://scenes/shop/got_gachapon.gd" id="1_fosra"]
 
 [node name="GotGachapon" type="Node2D"]

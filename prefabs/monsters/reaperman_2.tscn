@@ -1,0 +1,88 @@
+[gd_scene load_steps=21 format=3 uid="uid://cumikwg8e3ybm"]
+
+[ext_resource type="Texture2D" uid="uid://drnv8oyvsxj5p" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_000.png" id="1_dfkuh"]
+[ext_resource type="Texture2D" uid="uid://bug0vai4wt0s1" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_001.png" id="2_0muc5"]
+[ext_resource type="Texture2D" uid="uid://bfv881bya5wou" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_002.png" id="3_16r4p"]
+[ext_resource type="Texture2D" uid="uid://bof4pfbthxomk" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_003.png" id="4_telj7"]
+[ext_resource type="Texture2D" uid="uid://q6qe8n5w351p" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_004.png" id="5_g8s53"]
+[ext_resource type="Texture2D" uid="uid://bk1r21rv2bm4y" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_005.png" id="6_4nvjw"]
+[ext_resource type="Texture2D" uid="uid://c0fx8iwkns4pu" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_006.png" id="7_f45h2"]
+[ext_resource type="Texture2D" uid="uid://drrluxts63cq7" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_007.png" id="8_xyrmo"]
+[ext_resource type="Texture2D" uid="uid://bsg4tjoe31v5h" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_008.png" id="9_b4rid"]
+[ext_resource type="Texture2D" uid="uid://cjcax33aqwif2" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_009.png" id="10_jbud7"]
+[ext_resource type="Texture2D" uid="uid://06fighodwaja" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_010.png" id="11_6w3i8"]
+[ext_resource type="Texture2D" uid="uid://cg2qd5x5knr1h" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_011.png" id="12_ekyeb"]
+[ext_resource type="Texture2D" uid="uid://b8fi2m3v2dtqr" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_012.png" id="13_xe11v"]
+[ext_resource type="Texture2D" uid="uid://bvxpqr7btip56" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_013.png" id="14_4ei77"]
+[ext_resource type="Texture2D" uid="uid://vhsuykl54nog" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_014.png" id="15_4e38f"]
+[ext_resource type="Texture2D" uid="uid://dokrth70gaga6" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_015.png" id="16_uqw1o"]
+[ext_resource type="Texture2D" uid="uid://dacrd3cox07jy" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_016.png" id="17_1mq6x"]
+[ext_resource type="Texture2D" uid="uid://blbkgo0rgh48s" path="res://himymonsters-assets/arts/monsters/Reaper_Man_2/Idle Blinking/0_Reaper_Man_Idle Blinking_017.png" id="18_ibyr1"]
+[ext_resource type="Script" path="res://prefabs/monsters/play_animation.gd" id="19_f5ty8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ed13d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_dfkuh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0muc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_16r4p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_telj7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_g8s53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4nvjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_f45h2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xyrmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_b4rid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jbud7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_6w3i8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ekyeb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_xe11v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_4ei77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4e38f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_uqw1o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_1mq6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ibyr1")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}]
+
+[node name="Reaperman2" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ed13d")
+animation = &"idle"
+script = ExtResource("19_f5ty8")

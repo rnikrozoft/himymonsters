@@ -1,0 +1,87 @@
+[gd_scene load_steps=20 format=3 uid="uid://k4m3wn6bxonv"]
+
+[ext_resource type="Texture2D" uid="uid://bmhvjdxh51kpf" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_000.png" id="1_xutr0"]
+[ext_resource type="Texture2D" uid="uid://bst1i2bkjk3pw" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_001.png" id="2_8mhot"]
+[ext_resource type="Texture2D" uid="uid://1c365750c33o" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_002.png" id="3_gfvyx"]
+[ext_resource type="Texture2D" uid="uid://1tfyer5xhend" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_003.png" id="4_uc58i"]
+[ext_resource type="Texture2D" uid="uid://c2fnp0pdlie0n" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_004.png" id="5_p7n67"]
+[ext_resource type="Texture2D" uid="uid://bql8wmqp3upo1" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_005.png" id="6_4etfd"]
+[ext_resource type="Texture2D" uid="uid://ds3lephtur7l6" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_006.png" id="7_ysofv"]
+[ext_resource type="Texture2D" uid="uid://btp7m5eewdk0e" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_007.png" id="8_sh5bn"]
+[ext_resource type="Texture2D" uid="uid://cytwg5qflibuj" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_008.png" id="9_p6qh0"]
+[ext_resource type="Texture2D" uid="uid://hnj3v6dhqovj" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_009.png" id="10_l4wyn"]
+[ext_resource type="Texture2D" uid="uid://d1frf000wxvie" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_010.png" id="11_orhkh"]
+[ext_resource type="Texture2D" uid="uid://bya81qf1eukj8" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_011.png" id="12_c70tv"]
+[ext_resource type="Texture2D" uid="uid://biahd3rtb5nfv" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_012.png" id="13_2aigc"]
+[ext_resource type="Texture2D" uid="uid://bnxyfgulvt8lq" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_013.png" id="14_v78oo"]
+[ext_resource type="Texture2D" uid="uid://db73eeh434m5c" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_014.png" id="15_rcqka"]
+[ext_resource type="Texture2D" uid="uid://5qtxe05p26jk" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_015.png" id="16_suawe"]
+[ext_resource type="Texture2D" uid="uid://bu26kgsn5if0p" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_016.png" id="17_w2s4f"]
+[ext_resource type="Texture2D" uid="uid://dyhx1q3cnyxxo" path="res://himymonsters-assets/arts/monsters/Golem_3/Idle Blinking/0_Golem_Idle Blinking_017.png" id="18_q7rr0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8u404"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xutr0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8mhot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_gfvyx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_uc58i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_p7n67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_4etfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ysofv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_sh5bn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_p6qh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_l4wyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_orhkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_c70tv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2aigc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_v78oo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_rcqka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_suawe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_w2s4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_q7rr0")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}]
+
+[node name="Golem3" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_8u404")
+animation = &"idle"
+frame_progress = 0.166212

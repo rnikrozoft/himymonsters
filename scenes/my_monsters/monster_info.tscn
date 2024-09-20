@@ -1,0 +1,279 @@
+[gd_scene load_steps=24 format=3 uid="uid://dm62i8g6huu4"]
+
+[ext_resource type="Script" path="res://scenes/my_monsters/monster_info.gd" id="1_36bn8"]
+[ext_resource type="Texture2D" uid="uid://cvxbbfuasc3je" path="res://assets/arts/backgrounds/istockphoto-1169276040-612x612.jpg" id="2_hqm1b"]
+[ext_resource type="PackedScene" uid="uid://bwqd0gxendt2t" path="res://scenes/ui/top_menu.tscn" id="3_r4op3"]
+[ext_resource type="FontFile" uid="uid://doqsiqn53k5ba" path="res://assets/fonts/Mitr/Mitr-Regular.ttf" id="4_n6kns"]
+[ext_resource type="FontFile" uid="uid://cp4s0b8m6pl2d" path="res://assets/fonts/Mitr/Mitr-Bold.ttf" id="5_10nke"]
+[ext_resource type="FontFile" uid="uid://yfvn1slxwb8q" path="res://assets/fonts/CookieRunFont_TTF/CookieRun Bold.ttf" id="6_hd1rh"]
+[ext_resource type="Texture2D" uid="uid://d3bb4nkbxh2t4" path="res://assets/arts/monsters/ork_1/IDLE/IDLE_000.png" id="7_b1x5c"]
+[ext_resource type="Texture2D" uid="uid://sas606swthkp" path="res://assets/arts/monsters/ork_1/IDLE/IDLE_001.png" id="8_t1rf1"]
+[ext_resource type="Texture2D" uid="uid://c7uutuibm7gkq" path="res://assets/arts/monsters/ork_1/IDLE/IDLE_002.png" id="9_fyawc"]
+[ext_resource type="Texture2D" uid="uid://c8evix4mgv38a" path="res://assets/arts/monsters/ork_1/IDLE/IDLE_003.png" id="10_phxob"]
+[ext_resource type="Texture2D" uid="uid://cbrqomagc0x30" path="res://assets/arts/monsters/ork_1/IDLE/IDLE_004.png" id="11_uokwb"]
+[ext_resource type="Texture2D" uid="uid://gw1is8a783cv" path="res://assets/arts/monsters/ork_1/IDLE/IDLE_005.png" id="12_qlf0g"]
+[ext_resource type="Texture2D" uid="uid://cyub0biu7qbo8" path="res://assets/arts/monsters/ork_1/IDLE/IDLE_006.png" id="13_eqeja"]
+[ext_resource type="FontFile" uid="uid://rs3a0vmhwk3g" path="res://assets/fonts/Mitr/Mitr-Medium.ttf" id="15_rsm74"]
+[ext_resource type="FontFile" uid="uid://ohf26q7imoth" path="res://assets/fonts/Mitr/Mitr-SemiBold.ttf" id="16_kyvwc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gqmuy"]
+bg_color = Color(0, 0, 0, 0.27451)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06my4"]
+bg_color = Color(0, 0, 0, 0.270588)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3x5s6"]
+bg_color = Color(0.47451, 0.721569, 0.0784314, 1)
+border_width_bottom = 10
+border_color = Color(0.364706, 0.533333, 0.152941, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_color = Color(0.153913, 0.205464, 0.038092, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qqcqy"]
+content_margin_top = 10.0
+bg_color = Color(0.47451, 0.721569, 0.0745098, 1)
+border_width_bottom = 10
+border_color = Color(0.364706, 0.533333, 0.152941, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="Theme" id="Theme_fe2b7"]
+default_font_size = 30
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 15
+Button/font_sizes/font_size = 25
+Button/fonts/font = ExtResource("4_n6kns")
+Button/styles/hover = SubResource("StyleBoxFlat_3x5s6")
+Button/styles/normal = SubResource("StyleBoxFlat_3x5s6")
+Button/styles/pressed = SubResource("StyleBoxFlat_qqcqy")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h8b3i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_b1x5c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_t1rf1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fyawc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_phxob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_uokwb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_qlf0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_eqeja")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 10.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_emjfg"]
+bg_color = Color(0.122941, 0.372592, 0.515509, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_size = 5
+
+[sub_resource type="Theme" id="Theme_gmipv"]
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 10
+Button/font_sizes/font_size = 30
+Button/fonts/font = ExtResource("15_rsm74")
+Button/styles/normal = SubResource("StyleBoxFlat_emjfg")
+
+[node name="MonsterInfo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_36bn8")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_hqm1b")
+
+[node name="Details" type="Panel" parent="Background"]
+layout_mode = 0
+offset_left = 1170.0
+offset_top = 184.0
+offset_right = 1984.0
+offset_bottom = 960.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_gqmuy")
+
+[node name="Level" type="Label" parent="Background/Details"]
+layout_mode = 0
+offset_left = 326.0
+offset_top = -88.0
+offset_right = 506.0
+offset_bottom = 69.0
+theme_override_colors/font_color = Color(0.959898, 0.834147, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("5_10nke")
+theme_override_font_sizes/font_size = 100
+text = "Lv.3"
+
+[node name="Section1" type="Panel" parent="Background/Details"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 56.0
+offset_right = 772.0
+offset_bottom = 152.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_06my4")
+
+[node name="Label" type="Label" parent="Background/Details/Section1"]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 15.0
+offset_right = 407.0
+offset_bottom = 84.0
+theme_override_fonts/font = ExtResource("6_hd1rh")
+theme_override_font_sizes/font_size = 50
+text = "186"
+
+[node name="Section2" type="Panel" parent="Background/Details"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 168.0
+offset_right = 774.0
+offset_bottom = 536.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_06my4")
+
+[node name="Label" type="Label" parent="Background/Details/Section2"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -336.0
+offset_top = -154.0
+offset_right = 114.0
+offset_bottom = 155.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Lorem Ipsum is simply dummy text of the 
+printing and typesetting industry. Lorem Ipsum
+has been the industry's standard dummy text
+ever since the 1500s, when an unknown printer
+took a galley of type and scrambled it to make a
+type specimen book. It has survived not only five
+centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged. It was popularised
+in the 1960s with the release of Letraset sheets containing
+Lorem Ipsum passages, and more recently with desktop
+publishing software like Aldus PageMaker including
+versions of Lorem Ipsum."
+
+[node name="UpgradeButton" type="Button" parent="Background/Details"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 38.0
+offset_top = -127.0
+offset_right = -42.0
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_fe2b7")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Background/Details/UpgradeButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Background/Details/UpgradeButton/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("5_10nke")
+theme_override_font_sizes/font_size = 40
+text = "อัพเกรด"
+
+[node name="Price" type="Label" parent="Background/Details/UpgradeButton/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("5_10nke")
+theme_override_font_sizes/font_size = 40
+text = "56,000"
+
+[node name="Character" type="AnimatedSprite2D" parent="Background"]
+position = Vector2(736, 528)
+scale = Vector2(0.410959, 0.410959)
+sprite_frames = SubResource("SpriteFrames_h8b3i")
+animation = &"idle"
+frame = 4
+frame_progress = 0.105157
+
+[node name="Tag" type="Button" parent="Background"]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 136.0
+offset_right = 481.0
+offset_bottom = 184.0
+theme = SubResource("Theme_gmipv")
+text = "RARE"
+
+[node name="MonsterName" type="Label" parent="Background"]
+layout_mode = 0
+offset_left = 321.0
+offset_top = 184.0
+offset_right = 667.0
+offset_bottom = 263.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/font = ExtResource("16_kyvwc")
+theme_override_font_sizes/font_size = 50
+text = "ยักษ์เขียวค้อนโต"
+
+[node name="TopMenu" parent="." instance=ExtResource("3_r4op3")]
+
+[node name="PageTitle" type="Label" parent="TopMenu"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 34.0
+offset_right = 390.0
+offset_bottom = 82.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("4_n6kns")
+theme_override_font_sizes/font_size = 30
+text = "มอนสเตอร์"

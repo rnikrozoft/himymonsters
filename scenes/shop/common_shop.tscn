@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://bltfjg6nxt757"]
 
-[ext_resource type="Texture2D" uid="uid://dvebxmqibgs3m" path="res://assets/arts/backgrounds/vecteezy_cartoon-alien-planet-landscape-with-neon-crystals_24592684.jpg" id="1_3syk2"]
+[ext_resource type="Texture2D" uid="uid://dvebxmqibgs3m" path="res://himymonsters-assets/arts/backgrounds/vecteezy_cartoon-alien-planet-landscape-with-neon-crystals_24592684.jpg" id="1_3syk2"]
 [ext_resource type="Script" path="res://scenes/shop/common_shop.gd" id="1_qxq4a"]
-[ext_resource type="Texture2D" uid="uid://cq7qk7khykkt1" path="res://assets/arts/buttons/CasualGameButtonsVol03/CGB03-blue_M_btn.png" id="1_w4c05"]
-[ext_resource type="FontFile" uid="uid://rs3a0vmhwk3g" path="res://assets/fonts/Mitr/Mitr-Medium.ttf" id="2_fe8y3"]
-[ext_resource type="FontFile" uid="uid://doqsiqn53k5ba" path="res://assets/fonts/Mitr/Mitr-Regular.ttf" id="4_v2fsf"]
-[ext_resource type="Texture2D" uid="uid://diex7aqrlsnue" path="res://assets/arts/icons/icons/chest_4.png" id="5_ih467"]
-[ext_resource type="FontFile" uid="uid://cp4s0b8m6pl2d" path="res://assets/fonts/Mitr/Mitr-Bold.ttf" id="6_a6cm2"]
-[ext_resource type="PackedScene" uid="uid://bwqd0gxendt2t" path="res://scenes/ui/top_menu.tscn" id="9_13f3p"]
+[ext_resource type="Texture2D" uid="uid://cq7qk7khykkt1" path="res://himymonsters-assets/arts/buttons/CasualGameButtonsVol03/CGB03-blue_M_btn.png" id="1_w4c05"]
+[ext_resource type="FontFile" uid="uid://rs3a0vmhwk3g" path="res://himymonsters-assets/fonts/Mitr/Mitr-Medium.ttf" id="2_fe8y3"]
+[ext_resource type="FontFile" uid="uid://doqsiqn53k5ba" path="res://himymonsters-assets/fonts/Mitr/Mitr-Regular.ttf" id="4_v2fsf"]
+[ext_resource type="Texture2D" uid="uid://diex7aqrlsnue" path="res://himymonsters-assets/arts/icons/icons/chest_4.png" id="5_ih467"]
+[ext_resource type="FontFile" uid="uid://cp4s0b8m6pl2d" path="res://himymonsters-assets/fonts/Mitr/Mitr-Bold.ttf" id="6_a6cm2"]
+[ext_resource type="PackedScene" uid="uid://cxhrae322ln1m" path="res://scenes/ui/top_menu.tscn" id="9_13f3p"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_odq2l"]
 bg_color = Color(0, 0.235294, 0.392157, 0.870588)
